@@ -10,7 +10,7 @@ https://github.com/lithhalim/basic-auth/pulls
 https://github.com/lithhalim/basic-auth/actions
 
 
-##UML 
+## UML 
 ![](./assest/uml.png)
 
 ## DECMUNTATION
