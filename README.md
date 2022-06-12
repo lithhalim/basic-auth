@@ -16,9 +16,9 @@ https://github.com/lithhalim/basic-auth/actions
 ## DECMUNTATION
 
 - Create a new repository basic-auth
-- CRUD Operation: Create
-- CRUD Operation: Read
-- Update A Record
+- Make a POST request to the/signup route with username and password
+- Make a POST request to the /signin route
+- Keep your authentication related files in a folder called /auth so they are independent of the server itself.
 - CRUD Operation: Destroy
 - CRETE AUTHINTICATION SECTION BY USE SIGN IN SIGN UP 
 
