@@ -1,13 +1,19 @@
 # basic-auth
 
 ## 🚀 heroku link 
-https://auth-600.herokuapp.com/
+https://auth-600.herokuapp.com/auth
 ## 🚀 project link
 https://github.com/lithhalim/basic-auth
 ## 🚀 pull request
 https://github.com/lithhalim/basic-auth/pulls
 ## 🚀 action
 https://github.com/lithhalim/basic-auth/actions
+
+## how use
+#### signup
+![](./assest/signup.png)
+#### signin
+![](./assest/signin.png)
 
 
 ## UML 
