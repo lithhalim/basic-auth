@@ -13,7 +13,7 @@ app.use(express.json())
 //----------------------------------------------ROUTES SECTION------------------------------------------//
 const AUTH_ROUTER=require("../routes/AUTH_JWT")
 const MAINPAGE=require('../controllers/mainpage/MAINPAGE')
-app.use(AUTH_ROUTER)
+app.use("/auth",AUTH_ROUTER)
 app.get('/',MAINPAGE)
 
 
