@@ -6,6 +6,7 @@ module.exports=async(req,res,next)=>{
     try{
         const hashpassword =await bcrypt.hash(password, 10);
         const user = await REGUSTER_MODEL.create({ email:email,password:hashpassword });
+        res.status(201)
         res.json(user)
     }catch(err){
     }

@@ -2,21 +2,26 @@ const express = require('express')
 const app = express()
 
 
-const  bodyParser = require('body-parser')
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }))
 // parse application/json
-app.use(bodyParser.json())
+app.use(express.json())
 
 
 
 
 //----------------------------------------------ROUTES SECTION------------------------------------------//
 const AUTH_ROUTER=require("../routes/AUTH_JWT")
+const MAINPAGE=require('../controllers/mainpage/MAINPAGE')
 app.use(AUTH_ROUTER)
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.get('/',MAINPAGE)
+
+
+//--------------------------------------------ERROR HANDELER--------------------------------------------//
+const NotFound=require("../middelware/404")
+const SomthingBroken=require("../middelware/500")
+app.use(SomthingBroken)
+app.use(NotFound)
 
 
 
