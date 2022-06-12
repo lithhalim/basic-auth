@@ -1,7 +1,7 @@
 # basic-auth
 
 ## 🚀 heroku link 
-https://auth-600.herokuapp.com/auth
+https://auth-600.herokuapp.com/
 ## 🚀 project link
 https://github.com/lithhalim/basic-auth
 ## 🚀 pull request
