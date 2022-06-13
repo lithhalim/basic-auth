@@ -8,8 +8,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 
-
-
 //----------------------------------------------ROUTES SECTION------------------------------------------//
 const AUTH_ROUTER=require("../routes/AUTH_JWT")
 const MAINPAGE=require('../controllers/mainpage/MAINPAGE')
