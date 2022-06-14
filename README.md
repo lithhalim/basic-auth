@@ -11,11 +11,11 @@ https://github.com/lithhalim/basic-auth/actions
 
 ## how use
 #### signup
-![](./assest/signup.png)
+![](./assest/signup1.png)
 #### signin
-![](./assest/signin.png)
+![](./assest/signin1.png)
 #### authrization
-![](./assest/authrization.png)
+![](./assest/authrization1.png)
 
 
 
