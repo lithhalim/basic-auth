@@ -10,7 +10,11 @@ module.exports = LITH_DATABASE.define('authJwt', {
     password: {
       type: DataTypes.STRING
       // allowNull defaults to true
+    },
+    token: {
+      type: DataTypes.VIRTUAL,
     }
+
   }, {
     // Other model options go here
   });
