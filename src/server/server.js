@@ -8,11 +8,19 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 
+
+
 //----------------------------------------------ROUTES SECTION------------------------------------------//
 const AUTH_ROUTER=require("../routes/AUTH_JWT")
 const MAINPAGE=require('../controllers/mainpage/MAINPAGE')
-app.use("/auth",AUTH_ROUTER)
+app.use("/",AUTH_ROUTER)
 app.get('/',MAINPAGE)
+
+
+const BAREAR_AUTH=require("../auth/BAREAR_AUTH")
+app.get("/secretstuff",BAREAR_AUTH,(req,res)=>{
+  res.json(req.user)
+})
 
 
 //--------------------------------------------ERROR HANDELER--------------------------------------------//
