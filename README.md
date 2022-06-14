@@ -14,10 +14,16 @@ https://github.com/lithhalim/basic-auth/actions
 ![](./assest/signup.png)
 #### signin
 ![](./assest/signin.png)
+#### authrization
+![](./assest/authrization.png)
+
 
 
 ## UML 
 ![](./assest/uml.png)
+## UML 
+![](./assest/uml%20authrization.png)
+
 
 ## DECMUNTATION
 
