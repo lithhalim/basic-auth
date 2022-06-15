@@ -35,7 +35,7 @@ https://github.com/lithhalim/basic-auth/actions
 - CRUD Operation: Destro
 - CRETE AUTHINTICATION SECTION BY USE SIGN IN SIGN UP 
 
-#### Implementation Notes
+#### Implementation Notesh
  ###### REMINDER: Your app needs a new dependency today: sequelize
  - npm i sequelize sequelize-cli pg sqlite3
  - Remember to start your Postgres server:
