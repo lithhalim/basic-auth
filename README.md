@@ -32,7 +32,7 @@ https://github.com/lithhalim/basic-auth/actions
 - Make a POST request to the/signup route with username and password
 - Make a POST request to the /signin route
 - Keep your authentication related files in a folder called /auth so they are independent of the server itself.
-- CRUD Operation: Destroy
+- CRUD Operation: Destro
 - CRETE AUTHINTICATION SECTION BY USE SIGN IN SIGN UP 
 
 #### Implementation Notes
