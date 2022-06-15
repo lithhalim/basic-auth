@@ -28,7 +28,7 @@ https://github.com/lithhalim/basic-auth/actions
 
 ## DECMUNTATION
 
-- Create a new repository basic-auth
+- Create a new repository basic-autnh
 - Make a POST request to the/signup route with username and password
 - Make a POST request to the /signin route
 - Keep your authentication related files in a folder called /auth so they are independent of the server itself.
