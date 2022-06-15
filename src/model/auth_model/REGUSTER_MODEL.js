@@ -1,9 +1,9 @@
 
 const {DataTypes}=require("sequelize")
 const LITH_DATABASE=require("../../database/LITH_DATABASE")
-module.exports = LITH_DATABASE.define('authJwt', {
+module.exports = LITH_DATABASE.define('authnew', {
     // Model attributes are defined here
-    email: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false
     },

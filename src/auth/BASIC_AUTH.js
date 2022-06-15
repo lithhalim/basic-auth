@@ -17,7 +17,7 @@ module.exports=async (req,res,next)=>{
 
         try{
             //CHECK THE EMAIL IS CORRECT RO NOT
-            const user = await REGUSTER_MODEL.findOne({ where: { email: username } });
+            const user = await REGUSTER_MODEL.findOne({ where: { username: username } });
             //CHECK IF PASSWORD FROM HEADER MATCH WITH  PASSWORD FROM DATABASE
             const valid = await bcrypt.compare(password, user.password);
             if(valid){
@@ -32,7 +32,9 @@ module.exports=async (req,res,next)=>{
 
         }
         catch (error) { 
-            res.status(403).send('FAIL TO LOGIN'); 
+            res.status(403);
+            res.send("Invalid Signin");
+    
         }
 
 }

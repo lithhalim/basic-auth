@@ -12,12 +12,13 @@ const allreguster=require("../controllers/auth_controllers/ALLREGESTUR_CONTROLLE
 
 //BASIQ AUTH REQUIRE
 const BASIC_AUTH=require("../auth/BASIC_AUTH")
+const BAREAR_AUTH=require("../auth/BAREAR_AUTH")
 
 //ALL ROUTES ARE USED
 router.post("/signup",reguster)
 router.post("/signin",BASIC_AUTH,signin)
 router.post("/signout",signout)
-router.get("/allreguster",allreguster)
+router.get("/users",BAREAR_AUTH,allreguster)
 
 
 module.exports=router

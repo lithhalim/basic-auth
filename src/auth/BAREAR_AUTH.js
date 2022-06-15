@@ -13,13 +13,15 @@ module.exports = async (req, res, next) => {
     //GET THE SIGNIN ELEMT {USERNAME,SECRETE,EXPIRATION}{ email: 'lith', iat: 1655275080, exp: 1655275980 }
     const parsedToken = jwt.verify(token, process.env.SECRET_ACCES_KEY)
     //SEARCH  IN DATABASE AND RETURN THE USER HAVE THE SAME EMAIL
-    const user =await REGUSTER_MODEL.findOne({where:{email:parsedToken.email}}).then((data)=>{
+    const user =await REGUSTER_MODEL.findOne({where:{username:parsedToken.username}}).then((data)=>{
       req.user=data.dataValues
       next()
     })
     }
   } catch (e) {
-    res.json(createError.Unauthorized());
+    res.status(403);
+    res.send("Invalid Signin");
+
   }
 }
 
