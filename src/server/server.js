@@ -16,7 +16,7 @@ const MAINPAGE=require('../controllers/mainpage/MAINPAGE')
 app.use("/",AUTH_ROUTER)
 app.get('/',MAINPAGE)
 
-
+//PROTECTED ROUTES 
 const BAREAR_AUTH=require("../auth/BAREAR_AUTH")
 app.get("/secretstuff",BAREAR_AUTH,(req,res)=>{
   res.json(req.user)
