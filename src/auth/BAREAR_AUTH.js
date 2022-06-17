@@ -7,6 +7,9 @@ const createError = require('http-errors')
 module.exports = async (req, res, next) => {
   try {
     //CHECK IF THE HEADER CONTAIN AUTHRIZATION 
+    if(!req.headers.authorization){
+      return res.send("you not authrization")
+    }
     if (req.headers.authorization) {
     //GET THE JWT TOKEN FROM HERE( Bearer eyJhbGciXVCJ9.eyJlbWFpbCI6ImxpY1NTI3NTk4MH0.0) CODE WILL ACCEPT ASS STRING
     var token = req.headers.authorization.split(' ')[1];
